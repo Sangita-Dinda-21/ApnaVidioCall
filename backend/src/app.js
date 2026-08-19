@@ -32,7 +32,7 @@ const start = async () => {
     const connectionDB = await mongoose.connect("mongodb+srv://sangita_dinda:dinda123@apnavidiocallcluster.9k2mhf9.mongodb.net/");
 
     console.log(`MONGO Connected DB Host : ${connectionDB.connection.host}`);
-    app.listen(app.get("port"), ()=>{
+    server.listen(app.get("port"), ()=>{
         console.log("Server is running on port " + app.get("port"));
     })
 }
